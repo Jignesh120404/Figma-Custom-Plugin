@@ -16,7 +16,7 @@ function App() {
   const [selectedItem, setSelectedItem] = React.useState<Item | null>(null);
 
   React.useEffect(() => {
-    // Fetch your JSON data or set it directly
+    
     const jsonData = {
       items: [
         {
@@ -33,7 +33,7 @@ function App() {
     };
 
     setItems(jsonData.items);
-  }, []); // Fetch or set your data when the component mounts
+  }, []); 
 
   const onSelectItem = (item: Item) => {
     setSelectedItem(item);
@@ -41,7 +41,7 @@ function App() {
 
   const onCreate = () => {
     if (selectedItem) {
-      // Send a message to the code.ts file with the selected item
+ 
       parent.postMessage(
         { pluginMessage: { type: "create-rectangles", values: [selectedItem] } },
         "*"
