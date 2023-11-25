@@ -12,12 +12,15 @@
   --color-border-brand: var(--figma-color-border-brand);
   --color-border-brand-focus: var(--figma-color-border-selected-strong);
   --color-text-brand: var(--figma-color-text-onbrand);
+
 }
 
 html,
 body,
 main {
   height: 100%;
+  color: black;
+  
 }
 
 body,
@@ -30,8 +33,9 @@ button {
 }
 
 body {
-  background: var(--color-bg);
-  color: var(--color-text);
+  background: rgb(40, 63, 238);
+  
+  border-color: black;
   margin: 0;
 }
 
@@ -42,9 +46,10 @@ button {
   cursor: pointer;
   border: 1px solid var(--color-border);
   padding: 0.5rem 1rem;
+  
 }
 button:hover {
-  background-color: var(--color-bg-hover);
+  background-color: rgb(217, 217, 235);
 }
 button:active {
   background-color: var(--color-bg-active);
@@ -75,7 +80,7 @@ input:focus-visible {
 }
 
 svg {
-  stroke: var(--color-icon, rgba(0, 0, 0, 0.9));
+  stroke: var(--color-icon, rgba(243, 239, 239, 0.9));
 }
 
 main {
@@ -101,5 +106,9 @@ footer > * + * {
 
 img {
   height: auto;
-  width: 2rem;
+  width: 5rem;
 }
+option.Option{
+  color: brown;
+}
+
